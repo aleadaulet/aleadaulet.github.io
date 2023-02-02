@@ -1,42 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Hometown</title>
-    </head>
-    <body style="background-color:#eeeeeb;">
-        <h1 style="color:#0B3954;font-family:verdana;letter-spacing:0mm;text-align:center;line-height:0.5;font-size: 50px;">SHYMKENT</h1>
-        <h2 style="color:#0B3954;font-family:verdana;text-align:center;line-height:0.1;">42°19'0"N 69°35'45"E</h2>
-       
-        <hr>
-        <p style="text-align:center; font-family:verdana;">It is the <b>third-most populous</b> city in Kazakhstan, behind Almaty and Astana,<br>with an estimated population of <b>1,002,291</b>as of 1 June 2018 (retrieved from <a href="https://stat.gov.kz">Bureau of National Statistics</a>). <br> According to regional and city officials, the millionth resident of Shymkent was born on 17 May 2018.<br> It is a regional <b>cultural centre</b>.</p>
-        <hr>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>CSS Design</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="banner">
+      <!--<img src="banner 1.png" width="100%" height="250px"> -->
+    </div>
+  </header>
 
-        <h3 style="color:#0B3954;font-family:verdana;line-height:0.01;text-indent: 50px;">HISTORY</h3>
-        <p style="font-family:verdana;text-indent: 50px;line-height: 1.2;">Shymkent was founded in the twelfth century as a caravanserai to protect a nearby <b>Silk Road</b> trade town, Sayram, 10 km to the east. Shymkent grew as a market center for trade between Turkic nomads and the settled Sogdians. It was destroyed several times: by Genghis Khan, soldiers from the southern Khanates, and by nomad attacks. In the early 19th century, it became part of the khanate of Kokand before it was captured by the Russians in 1864. It was renamed <b>Chernyaev</b> in 1914 and renamed <b>Shymkent</b> in 1924. Following the Russian conquest, Shymkent was a city of trade between nomadic Turks and sedentary Turks, and was famous for its <b>kumis</b>.
-            Shymkent was founded as <b>a hub for economic development</b> in South Kazakhstan in the 20th century, and rapid growth was evolving in the second half of the century. To date, there are about 70 factories, plants and other manufacturing companies in the area.</p>
-        
-        <h3 style="color:#0B3954;font-family:verdana;line-height:0.01;text-indent: 50px;">CLIMATE</h3>
-        <p style="font-family:verdana;text-indent: 50px;line-height: 1.2;">Shymkent features a humid continental climate (Köppen Dsa) bordering on a mediterranean climate (Csa). Shymkent features hot, relatively dry summers and cold winters. Winters here are noticeably warmer than in more northerly cities like Almaty and Astana, with the mean monthly temperature during the city's coldest month (January) averaging around −1 °C (30.2 °F). Winter snowfalls are common, although rainfall during that season occurs mixed in with that. Shymkent averages just under 600 millimetres (23.62 in) of precipitation annually.</p>
-       
-        <h3 style="color:#0B3954;font-family:verdana;line-height:0.01;text-indent: 50px;">PLACES (<a href="other_page.html">other page about sightseeing)</a></h3>  <!-- other page with places to visit in Shymkent -->
-        <ol style="font-family:verdana">
-            <li>Abay Park</li>
-            <li>Shymkent Plaza</li>
-            <li>Dendropark</li>
-            <li>Museum of Victims of Political Repressions</li>
-            <li>Konaev Museum</li>
-        </ol>
+  <!-- Navbar -->
+  <nav>
+      <a class="logo" href="#">
+        <img src="NUlogo.png" alt="logo" width="219px" height="72px">
+      </a>
+      <ul class="menu">
+        <li><a class="active" href="#task">Task</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#submission">Submission</a></li>
+        <li><a href="#grading">Grading</a></li>
+        <li><a href="#deadline">Deadline</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+  </nav>
 
-        <h3 style="color:#0B3954;font-family:verdana;line-height:0.01;text-indent: 50px;">NUMBERS</h3>
-        <ul style="font-family:verdana">
-            <li><b>Postal code</b> 160000</li>
-            <li><b>Area code</b> (+7) 7252</li>
-            <li><b>ISO 3166 code</b> SHY</li> 
-            <li><b>Vehicle registration</b> 17</li> <!-- Need to add info when it was changed to 17 -->
+  <!-- Main Content -->
+  <section class="main_content">
+    <h1 id="main-heading" class="topic">
+      Lab 3 - Designing with CSS 
+    </h1>
+    <hr>
+    <article id="task">
+      <h2>Task</h2>
+      <p>
+        As you have alredy learned in the last lecture, 
+        CSS is about the presentation of the documents
+        like HTML or XML.
+        You need to apply
+        CSS styling rules to make this template HTML file look
+        beautiful and interesting.  
+      </p>
+      <p id="task2">
+        There are no 
+        limits to what techniques you use and how you 
+        ultimately solve this task. 
+        However, there are some minimal requirements
+        which are explained in the next section below.
+        <a href="#requirements">Next...</a>
+      </p>
+      <img id="laptop" src="laptop.jpg" alt="" width="80%" height="35%">
+    </article>
+    <article id="requirements">
+      <h2>Requirements</h2>
+      <p>
+        The main requirement for this task is to 
+        style this HTML document without any 
+        changes (including adding new and deleting the existing elements) to itself except for these cases: 
+        <ul name="requirementslist">
+          <li>
+            You can add <strong>id</strong>
+            and <strong>class</strong> 
+            attributes to the ncessary elements. 
+            </li>
+            <li>
+            You can replace the 
+            images in the defined elements within this document with your
+            own ones. 
+            </li><li>
+            Notice that there is a place for a 
+            large banner on the top of the page,
+            you <strong>must</strong> place an image there only using CSS.
+            </li>
+            <li>
+              You <strong>must</strong> write your names in the specified fields below.
+            </li>
+            <li>You can change the location
+              of in the map below or replace it with the image.
+            </li>
         </ul>
+      </p>
+      <p>
+        In your stylesheet you <strong>must</strong>
+         use these selectors:
+        <ul name="requirementslist">
+          <li>Element selectors;</li>
+          <li>Class selectors;</li>
+          <li>Attribute selectors;</li>
+          <li>ID selectors.</li>
+          <li>Pseudo-class selectors.</li>
+        </ul>
+      </p>
+      <p>
+        Also, you <strong>must</strong> 
+        use the necessary CSS properties
+        and demonstrate the following changes
+        of the elements:
+        <ul name="requirementslist">
+          <li>font and background colors;</li>
+          <li>font family and size;</li>
+          <li>margin, padding and borders;</li>
+          <li>image sizes (width and height);</li>
+          <li>text alignment (horizontal and vertical);</li>
+        </ul>
+      </p>
+      <p>Additionally, a special focus <strong>must</strong> 
+        be done to the menu links.        
+        They need to change their status appropriately 
+        (active, hover, visited)
+        as well as be placed in a natural way,
+        i.e. horizontally or vertically. 
+        <a href="#submission">Next...</a>
+      </p>
+    </article>
+    <article id="submission">
+      <h2>Submission</h2>
+      <p name="submissiondirections">
+       As usual, you <strong>must</strong> submit 
+       your work via Github. All the files and images need to go to 
+       your <strong> <i>username.github.io</i> </strong>repository. 
+       Also, this page must be available 
+       through this domain name.
+      </p>
+      <h3>Info</h3>
+      <p>
+         <img name="myphoto" src="me.jpg" alt="" width="162px" height="210px">
+        <ul name="info_about_me">
+          <li name ="me">Aliya Daulet</li>
+        </ul>
+      </p>
+    </article>
+    <article id="grading">
+      <h2>Grading</h2>
+      For this assignment you will get 
+      <strong>70 points</strong>  in total.
+      The final score is the sum of the points 
+      for each of the criteria below.
+      <table>
+        <tr>
+          <th>Criteria</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>CSS file is linked to the document</td>
+          <td>5 pts</td>
+        </tr>
+        <tr>
+          <td>Banner image is present</td>
+          <td>5 pts</td>
+        </tr>
+        <tr>
+          <td>Menu is styles appropriately</td>
+          <td>5 pts</td>
+        </tr>
+        
+        <tr>
+          <td>Photo is present </td>
+          <td>5 pts</td>
+        </tr>
+         <tr>
+          <td>HTML file is unchanged</td>
+          <td>5 pts</td>
+        </tr>
+        <tr>
+          <td>Required selectors are used</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Required CSS properties are used</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Website is available online</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Website looks nice and not broken</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Extra cool stuff is used</td>
+          <td>5 pts</td>
+        </tr>
+        </tr>
+      </table>
+    </article>
+  </section>
 
-        <img src="city.jpeg" alt="Shymkent" width="100%" height="1064">
-    </body>
+  <!-- Aside Information -->
+  <aside>
+    <h3 class="imp">Important</h3>
+    <section class="aside_content">
+      <article id="deadline">
+        <h4>Deadlines:</h4>
+        <ul>
+          <li>Soft deadline: Jan. 31, 2023, 23:59</li>
+          <li>Hard deadline: Feb. 2, 2023, 23:59</li>
+        </ul>
+        <p>
+        <a href="#">More...</a>
+      </article>
+      </section>
+     
+        <h3 class="somedc">Some Dummy Content</h3>
+       <section>
+        <article class="article1">
+        <h4>Article 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Odit, fugiat eveniet! 
+          Optio quia perspiciatis earum ipsa dicta 
+          porro dolorum facere laudantium repellat 
+          ad necessitatibus asperiores dolor, molestias 
+          officiis corrupti iusto.
+          <a href="#">More...</a>
+        </p>
+      </article>
+      <article class="article2">
+        <h4>Article 2</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Odit, fugiat eveniet! 
+          Optio quia perspiciatis earum ipsa dicta 
+          porro dolorum facere laudantium repellat 
+          ad necessitatibus asperiores dolor, molestias 
+          officiis corrupti iusto.
+          <a href="#">More...</a>
+        </p>
+      </article>
+      <article class="article3">
+        <h4>Article 3</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Odit, fugiat eveniet! 
+          Optio quia perspiciatis earum ipsa dicta 
+          porro dolorum facere laudantium repellat 
+          ad necessitatibus asperiores dolor, molestias 
+          officiis corrupti iusto.
+          <a href="#">More...</a>
+        </p>
+      </article>
+    </section>
+  </aside>
 
- </html>
+  <!-- FOOTER -->
+  <footer>
+    <div class="contacts">
+      <div >
+        <h5>Contacts</h5>
+        <p>
+          Nazarbayev University <br>
+          53 Kabanbay Batyr ave. <br>
+          Block 7, Room 7.422 <br>
+          Ph.: +7-7172-123-4567 <br>
+          <a href="mailto:info@naturallyinspired.com" class="email">
+            info@naturallyinspired.com
+          </a>
+        </p>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.40174598881!2d71.39975662132689!3d51.09225672318327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585a5651070df%3A0xa0e423d92f946f00!2sNazarbayev%20University!5e0!3m2!1sen!2skz!4v1675352415422!5m2!1sen!2skz" 
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+      </div>
+    </div>
+    <div class="categories">
+      <h5>Top 10 Categories</h5>
+      <ul>
+        <li><a href="#">Category 1</a></li>
+        <li><a href="#">Category 2</a></li>
+        <li><a href="#">Category 3</a></li>
+        <li><a href="#">Category 4</a></li>
+        <li><a href="#">Category 5</a></li>
+        <li><a href="#">Category 6</a></li>
+        <li><a href="#">Category 7</a></li>
+        <li><a href="#">Category 8</a></li>
+        <li><a href="#">Category 9</a></li>
+        <li><a href="#">Category 10</a></li>
+      </ul>
+    </div>
+    <div class="quick_links">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+        <li><a href="#">Item4</a></li>
+        <li><a href="#">Item5</a></li>
+        <li><a href="#">Item6</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
