@@ -23,6 +23,9 @@ for (const likeButton of allLikeButtons) {
     } else {
       innerImage.src = "../images/heart-active.jpg";
     }
+    
+    const audio = new Audio("../resources/like-sound.mp3");
+    audio.play();
 
     innerImage.dataset.active = !isActive;
   });
